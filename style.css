@@ -1,4 +1,17 @@
+/* スマホ用のCSS */
+
 body {
   margin: 0;
   padding: 0;
 }
+
+.main{
+  background-color: #fff8b5;
+  height: 300px;
+  color: red;
+}
+
+
+/* @media screen and (min-width: 960px) {
+	960px以上に適用されるCSS（PC用）
+} */
