@@ -4,14 +4,29 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.main{
-  background-color: #fff8b5;
-  height: 300px;
-  color: red;
+header{
+  position: fixed;
+  top: 0;
 }
 
+.frame-header{
+  display: flex;
+  border:solid 1px black;
+}
 
-/* @media screen and (min-width: 960px) {
-	960px以上に適用されるCSS（PC用）
-} */
+main{
+  background-color: #fff8b5;
+  height: 300px;
+}
+
+.lunch{
+  background-color: #DEF5FF;
+}
+
+.dinner{
+  background-color: #B3FFA7;
+}
+
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+}
