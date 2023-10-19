@@ -27,12 +27,6 @@ header {
   height: 100%;
 }
 
-/* .menu-setting {
-
-  padding: 0;
-  margin: 0;
-} */
-
 .menu-round {
   background-color: #d9d9d9;
   width: 50px;
@@ -47,12 +41,28 @@ header {
   height: 25px;
 }
 
+.img-login {
+  display: none;
+}
+
+.img-search {
+  display: none;
+}
+
+.img-cart {
+  display: none;
+}
+.img-setting {
+  display: none;
+}
+
 main {
   background-color: #fff8b5;
   height: 300px;
 }
 
-.menu{ border: solid 1px black;
+.menu {
+  border: solid 1px black;
   /* padding: 0; */
 }
 
@@ -66,10 +76,68 @@ main {
   height: 200px;
 }
 
-footer{
-  background-color: #FFA0A0;
+footer {
+  background-color: #ffa0a0;
 }
 
 @media screen and (min-width: 960px) {
   /* 960px以上に適用されるCSS（PC用） */
+  header {
+    width: 100%;
+    background-color: #d9d9d9;
+    position: static;
+  }
+
+  .frame-header {
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .menu-setting {
+    display: flex;
+    /* background-color: yellow; */
+    min-width: 20%;
+    justify-content: space-between;
+  }
+
+  .menu-round {
+    display: none;
+  }
+
+  .img-menu {
+    display: none;
+  }
+
+  .img-login {
+    display: block;
+    height: 25px;
+  }
+
+  .img-search {
+    display: block;
+    height: 25px;
+  }
+
+  .img-cart {
+    display: block;
+    height: 25px;
+  }
+
+  .img-setting {
+    display: block;
+    height: 25px;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .lunch {
+    width: 45%;
+  }
+
+  .dinner {
+    width: 45%;
+  }
 }
