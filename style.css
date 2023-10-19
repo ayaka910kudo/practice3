@@ -4,29 +4,72 @@ body {
   margin: 0;
   padding: 0;
 }
-header{
+header {
+  width: 100%;
   position: fixed;
   top: 0;
 }
 
-.frame-header{
+.frame-header {
   display: flex;
-  border:solid 1px black;
+  justify-content: space-between;
+  border: solid 1px black;
+  margin: 10px;
+  align-items: center;
+  padding: 0;
 }
 
-main{
+.logo {
+  /* background-color: blue; */
+  height: 50px;
+}
+.img-logo {
+  height: 100%;
+}
+
+/* .menu-setting {
+
+  padding: 0;
+  margin: 0;
+} */
+
+.menu-round {
+  background-color: #d9d9d9;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-menu {
+  height: 25px;
+}
+
+main {
   background-color: #fff8b5;
   height: 300px;
 }
 
-.lunch{
-  background-color: #DEF5FF;
+.menu{ border: solid 1px black;
+  /* padding: 0; */
 }
 
-.dinner{
-  background-color: #B3FFA7;
+.lunch {
+  background-color: #def5ff;
+  height: 200px;
+}
+
+.dinner {
+  background-color: #b3ffa7;
+  height: 200px;
+}
+
+footer{
+  background-color: #FFA0A0;
 }
 
 @media screen and (min-width: 960px) {
-	/* 960px以上に適用されるCSS（PC用） */
+  /* 960px以上に適用されるCSS（PC用） */
 }
