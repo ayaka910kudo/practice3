@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
 }
 header {
   width: 100%;
@@ -24,7 +25,7 @@ header {
   /* background-color: blue; */
   height: 50px;
 }
-.img-logo {
+.img-logo-white {
   height: 100%;
 }
 
@@ -59,11 +60,19 @@ header {
 
 main {
   /* background-color: blue; */
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.container-main{
+  width: 100%;
+  /* background-color: pink; */
+  /* position: relative; */
+}
+
 
 .img-hawaii {
   width: 100%;
@@ -73,48 +82,50 @@ main {
 }
 
 .img-restaurant-logo {
-  position: absolute;
-  top: 70px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
   width: 80%;
+  
 }
 
 .menu {
   /* border: solid 1px black; */
 }
 
-.padding{
+.padding {
   padding: 30px;
-  background: -moz-linear-gradient(top, #ffffff, #FFFBE3);
-  background: -webkit-linear-gradient(top, #ffffff, #FFFBE3);
-  background: linear-gradient(to bottom, #ffffff, #FFFBE3);
+  background: -moz-linear-gradient(top, #ffffff, #fffbe3);
+  background: -webkit-linear-gradient(top, #ffffff, #fffbe3);
+  background: linear-gradient(to bottom, #ffffff, #fffbe3);
 }
 
 .lunch {
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
 }
 
-.img-lunch{
+.img-lunch {
   height: 100px;
   margin-right: 15px;
 }
 
-.container-info p{
+.container-info p {
   margin: 10px;
-  color: #5B0F00;
+  color: #5b0f00;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.text-LD{
+.text-LD {
   font-weight: bold;
   font-size: large;
 }
 
-button{
-  background-color: #FAB39B;
+button {
+  background-color: #fab39b;
   color: white;
   width: 100%;
   border: none;
@@ -124,16 +135,14 @@ button{
 
 .dinner {
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
 }
 
-.img-dinner{
+.img-dinner {
   height: 100px;
   margin-right: 15px;
 }
-
-
 
 footer {
   background-color: #ffa0a0;
@@ -146,7 +155,7 @@ footer {
   /* 960px以上に適用されるCSS（PC用） */
   header {
     width: 100%;
-    background-color: #d9d9d9;
+    background-color: #fab39b;
     position: static;
   }
 
@@ -190,16 +199,71 @@ footer {
     display: block;
     height: 25px;
   }
+
+  .img-hawaii {
+    height: 670px;
+    object-fit: cover;
+  }
   .menu {
     display: flex;
     justify-content: center;
+  }
+
+  .padding {
+    padding: 70px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background: -moz-linear-gradient(top, #ffffff, #fffbe3);
+    background: -webkit-linear-gradient(top, #ffffff, #fffbe3);
+    background: linear-gradient(to bottom, #ffffff, #fffbe3);
   }
 
   .lunch {
     width: 45%;
   }
 
+  .img-lunch {
+    height: 220px;
+    margin-right: 25px;
+  }
+
+  .container-info{
+  /* width: 200px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .container-info p {
+    margin: 10px;
+    font-size: 25px;
+    width: 100%;
+    white-space: nowrap;
+    color: #5b0f00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .dinner {
     width: 45%;
   }
+
+  button {
+    background-color: #fab39b;
+    color: white;
+    width: 100%;
+    font-size: large;
+    border: none;
+    border-radius: 25px;
+    padding: 5px;
+  }
+
+  .img-dinner {
+    height: 220px;
+    margin-right: 25px;
+  }
+
 }
+
