@@ -147,7 +147,7 @@ button {
 }
 
 footer {
-  background-color: #ffa0a0;
+  background-color: #FAB39B;
   color: white;
   display: flex;
   justify-content: center;
@@ -222,7 +222,7 @@ display: none;
 
 .c-header {
   align-items: center;
-  background-color: #FAB39B; /* カスタマイズしてください */
+  background-color: #fab39b; /* カスタマイズしてください */
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -264,6 +264,62 @@ display: none;
 .c-hamburger-menu {
   position: relative;
 }
+
+ /* ボタンデザイン */
+ section {
+  max-width: 300px;
+  margin: 0 auto;
+}
+a.btn_02_a {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  background-color: #fab39b;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+a.btn_02_a:hover {
+  background: #bb745c;
+}
+a.btn_02_a span {
+  position: relative;
+  padding-left: 36px;
+}
+a.btn_02_a span:before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -13px;
+}
+a.btn_02_a span:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-top: 3px solid #FAB39B;
+  border-right: 3px solid #FAB39B;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  margin-top: -5px;
+}
+a.btn_02_a:hover span:after {
+  border-top: 3px solid #bb745c;
+  border-right: 3px solid #bb745c;
+}
+
+/* ボタンデザインここまで */
+
+
 
 @media screen and (min-width: 960px) {
   /* 960px以上に適用されるCSS（PC用） */
@@ -331,6 +387,18 @@ display: none;
     background: -moz-linear-gradient(top, #ffffff, #fffbe3);
     background: -webkit-linear-gradient(top, #ffffff, #fffbe3);
     background: linear-gradient(to bottom, #ffffff, #fffbe3);
+  }
+
+  a.btn_02_a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    padding: 1rem 1.5rem;
+    background-color: #fab39b;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
   }
 
   .lunch {
