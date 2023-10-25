@@ -28,6 +28,8 @@ header {
 }
 .img-logo-white {
   height: 100%;
+  min-width: 80px;
+  text-decoration: none;
 }
 
 .menu-round {
@@ -152,17 +154,18 @@ footer {
 }
 
 .c-hamburger-menu__list {
-  background-color: #eeeeee; /* カスタマイズしてください */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   left: 0;
-  padding: 2rem; /* カスタマイズしてください */
+  padding: 10rem; /* カスタマイズしてください */
   position: absolute;
   transform: translateX(-100%);
-  transition: 0.3s; /* カスタマイズしてください */
+  transition: 0.4s; /* カスタマイズしてください */
   top: 100%;
-  width: 100%;
+  width: 50%;
 }
 
 #hamburger:checked ~ .c-hamburger-menu__list {
@@ -210,16 +213,16 @@ display: none;
 }
 
 .c-hamburger-menu__button-mark {
-  background-color: #000; /* カスタマイズしてください */
+  background-color: white; /* カスタマイズしてください */
   display: block;
-  height: 1px; /* カスタマイズしてください */
+  height: 2px; /* カスタマイズしてください */
   transition: 0.3s; /* カスタマイズしてください */
   width: 20px; /* カスタマイズしてください */
 }
 
 .c-header {
   align-items: center;
-  background-color: #eeeeee; /* カスタマイズしてください */
+  background-color: #FAB39B; /* カスタマイズしてください */
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -227,11 +230,11 @@ display: none;
   width: 100%;
 }
 
-.c-header__logo {
-  color: #000; /* カスタマイズしてください */
-  min-width: 80px; /* カスタマイズしてください */
+/* .c-header__logo {
+  color: #000; 
+  min-width: 80px;
   text-decoration: none;
-}
+} */
 
 .c-header__list {
   box-sizing: border-box;
@@ -243,6 +246,7 @@ display: none;
 .c-header__list-item {
   list-style: none;
   text-decoration: none;
+  margin-left: 2%;
 }
 
 .c-header__list-link {
